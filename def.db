@@ -1,0 +1,76 @@
+{
+    "tree": {
+        "name": "cc",
+        "type": "object",
+        "children": [
+            {
+                "name": "ig",
+                "type": "object",
+                "children": [
+                    {
+                        "type": "static",
+                        "name": "BGM",
+                        "parent": "ig"
+                    },
+                    {
+                        "name": "varNames",
+                        "type": "object",
+                        "children": [
+                            {
+                                "type": "static",
+                                "name": "titleMusic",
+                                "parent": "cc.ig.BGM"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "static",
+                        "parent": "ig",
+                        "name": "BGMTrack"
+                    }
+                ]
+            }
+        ]
+    },
+    "entries": {
+        "BGM": {
+            "type": "select",
+            "pattern": "left.object.property.name",
+            "from": {
+                "type": "AssignmentExpression",
+                "values": [
+                    {
+                        "name": "right.arguments.0.raw",
+                        "value": "\"title\""
+                    }
+                ]
+            }
+        },
+        "BGMTrack": {
+            "type": "select",
+            "pattern": "callee.property.name",
+            "from": {
+                "type": "NewExpression",
+                "values": [
+                    {
+                        "name": "arguments.0.raw",
+                        "value": "\"title\""
+                    }
+                ]
+            }
+        },
+        "titleMusic": {
+            "type": "select",
+            "pattern": "left.property.name",
+            "from": {
+                "type": "AssignmentExpression",
+                "values": [
+                    {
+                        "name": "right.arguments.0.raw",
+                        "value": "\"title\""
+                    }
+                ]
+            }
+        }
+    }
+}
