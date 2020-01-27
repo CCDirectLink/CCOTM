@@ -2,4 +2,4 @@
 
 ## requirements
 
- - must have [loadmusic](https://github.com/CCDirectLink/loadmusic) mod
+ - must have [hardcoded-config-injector](https://github.com/CCDirectLink/hardcoded-config-injector)
