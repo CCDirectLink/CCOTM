@@ -1,9 +1,0 @@
-{
-	"name" : "title-music",
-	"description": "Old title music ftw",
-	"version": "1.0.0",
-	"prestart": "prestart.js",
-	"ccmodDependencies": {
-		"hardcoded-config-injector": "0.x.x"
-	}
-}
